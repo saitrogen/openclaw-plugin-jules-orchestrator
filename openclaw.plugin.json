@@ -6,7 +6,7 @@
   "configSchema": {
     "type": "object",
     "properties": {
-      "apiKey": {
+      "julesApiKey": {
         "type": "string",
         "description": "Google Jules API Key",
         "env": "JULES_API_KEY"
@@ -15,8 +15,13 @@
         "type": "string",
         "description": "GitHub Token for repo access",
         "env": "GITHUB_TOKEN"
+      },
+      "defaultRepo": {
+        "type": "string",
+        "description": "Default GitHub repository for tasks",
+        "default": "owner/repo"
       }
     },
-    "required": ["apiKey"]
+    "required": ["julesApiKey", "githubToken"]
   }
 }
