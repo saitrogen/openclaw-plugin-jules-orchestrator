@@ -1,0 +1,22 @@
+{
+  "id": "jules-orchestrator",
+  "name": "Jules Orchestrator",
+  "description": "Orchestrates Google Jules tasks",
+  "version": "0.1.0",
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "apiKey": {
+        "type": "string",
+        "description": "Google Jules API Key",
+        "env": "JULES_API_KEY"
+      },
+      "githubToken": {
+        "type": "string",
+        "description": "GitHub Token for repo access",
+        "env": "GITHUB_TOKEN"
+      }
+    },
+    "required": ["apiKey"]
+  }
+}
